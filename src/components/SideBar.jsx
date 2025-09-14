@@ -4,7 +4,12 @@ import CloseIcon from "../assets/images/icon-close.svg";
 function SideBar({ onClose }) {
   return (
     <section className="side-bar">
-      <button onClick={onClose} aria-label="Close menu" className="close-btn">
+      <button
+        type="button"
+        onClick={onClose}
+        aria-label="Close menu"
+        className="close-btn"
+      >
         <img src={CloseIcon} alt="close menu" className="icons close-icon" />
       </button>
 

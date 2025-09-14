@@ -33,7 +33,9 @@ function Cart({ cartItems, onRemoveFromCart }) {
       </div>
 
       {cartItems.length > 0 && (
-        <button className="checkout-btn">Checkout</button>
+        <button type="button" className="checkout-btn">
+          Checkout
+        </button>
       )}
     </section>
   );
