@@ -1,0 +1,34 @@
+.side-bar {
+  width: 70%;
+  height: 130vh;
+  @include flex(column, flex-start, start);
+  gap: 3rem;
+  z-index: 20;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  background-color: $White;
+  padding: 1rem 1.5rem;
+
+  img {
+    cursor: pointer;
+  }
+
+  .close-btn {
+    border: none;
+    background-color: $White;
+  }
+
+  .drop-down {
+    ul {
+      @include flex(column, flex-start, start);
+      gap: 1rem;
+    }
+
+    li {
+      list-style-type: none;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+}

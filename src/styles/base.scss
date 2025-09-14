@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include flex(column, center, center);
+  font-size: $Font-paragraph;
+  font-family: $font-family;
+  background-color: $White;
+  color: $Black;
+}
+
+@media (min-width: 48rem) {
+  body {
+    height: 100vh;
+  }
+}
